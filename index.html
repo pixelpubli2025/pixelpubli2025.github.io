@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PIXEL - IMPRESIÓN Y PUBLICIDAD (En Construcción)</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo-sin-fondo.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo-sin-fondo.png" alt="Logo PIXEL" class="logo-pixel" />
+    </div>
+    <div class="header-content">
+      <h1>PIXEL</h1>
+      <h2>IMPRESIÓN Y PUBLICIDAD</h2>
+      <p>Diseño, impresión, personalización y creatividad visual</p>
+      <p class="slogan">“Se escribe diseño, se pronuncia PASIÓN”</p>
+      <button id="toggle-mode">🌙 Modo oscuro</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="construction">
+      <img src="website-under-const-sin.png" alt="enConstrucción" />
+      <h2>🚧 Sitio web en construcción</h2>
+      <p>Muy pronto podrás conocer todo nuestro portafolio en línea.</p>
+    </section>
+
+    <section class="services">
+      <h2>🧩 Lo que hacemos</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-print icon-bounce"></i>
+          <strong>IMPRESIÓN GRAN FORMATO</strong>
+          <p>Alta calidad en vinilo, lona, papel fotográfico y más.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-palette icon-spin"></i>
+          <strong>BRANDING Y ASESORÍA</strong>
+          <p>Diseñamos tu identidad gráfica desde cero.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-utensils icon-pulse"></i>
+          <strong>DISEÑO DE MENÚS Y AVISOS</strong>
+          <p>Soluciones visuales para restaurantes y negocios.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-images icon-bounce"></i>
+          <strong>FOTOMONTAJES PROFESIONALES</strong>
+          <p>Edición y montaje de imágenes a nivel experto.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-flag icon-spin"></i>
+          <strong>PENDONES PUBLICITARIOS</strong>
+          <p>Ideal para eventos, promociones y señalización.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-tags icon-pulse"></i>
+          <strong>STICKERS Y SEÑALIZACIÓN</strong>
+          <p>Adhesivos y señalética para cualquier espacio.</p>
+        </div>
+       <div class="service-card">
+          <i class="fas fa-tags icon-pulse"></i>
+          <strong>PERSONALIZACIÓN</strong>
+          <p>Dale identidad a tu marca con productos personalizados, estampados, sublimación y señalética profesional.</p>
+       </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contáctanos</h2>
+      <div class="contact-details">
+        <p><strong>📍 Dirección:</strong> Cl. 42 Sur # 78 H 16</p>
+        <p><strong>☎️ Teléfono fijo:</strong> 601 407 5126</p>
+        <p><strong>📱 WhatsApp:</strong> (+57) 321 9339525 / (+57) 321 4013128</p>
+        
+        <p><strong>✉️ Email: </strong>direccioncomercial.pixel@gmail.com</p>
+        <p><strong>✉️ Email: </strong>creativospublicidad.pixel@gmail.com</p>
+      </div>
+      <div class="social">
+        <a href="https://wa.me/573219339525" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/pixelimpresioncol" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/pixelimpresioncol" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@pixelimpresioncol" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="mailto:direccioncomercial.pixel@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 PIXEL - IMPRESIÓN Y PUBLICIDAD — Sitio en construcción
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById("toggle-mode");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggleBtn.textContent = document.body.classList.contains("dark-mode")
+        ? "☀️ Modo claro"
+        : "🌙 Modo oscuro";
+    });
+  </script>
+</body>
+</html>
